@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="juiceShop" content="The details about the juice shop">
+    <title>Juice Shop</title>
+    <link rel="icon" href="juiceTitleImg.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+<body>
+    <header>
+    <h1 style="text-align:center"> <strong>Welcome to Sip & Smile Juice Shop </strong> </h1> 
+    <hr>
+    <nav>
+        <ul>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href=benefits.html>Benefits of drinking fresh juice</a></li>
+            <li><a href="priceDetails.html">Price Details</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+  </nav>
+<figure>
+  <img src="BenefitsImg.png" alt="Juice Images" >
+  <figcaption>Enjoy your fresh fruit juice</figcaption>
+</figure>
+</header>
+    <main>
+        <article id="contact">
+            <p>Contact Me</p>
+        <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+                <legend>Personal Info</legend>
+        <p>
+            <label for="firstName">FirstName:</label>
+            <input type="text" name="firstName" id="firstName" placeholder="name" autocomplete="on"  required autofocus>
+        </p>
+        <p>
+            <label for="lastName">lastName:</label>
+            <input type="text" name="lastName" id="lastName" required>
+        </p>
+        <p>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required>
+        </p>
+        <p>
+            <label for="phoneNumber">PhoneNumber:</label>
+            <input type="tel" name="phoneNumber" id="phoneNumber" required
+            placeholder="99999999999" pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+        </p>
+        <p>
+            <label for="Decade">FavoriteDecade:</label>
+            <input type="number" name="decade" id="decade" min="1990" max="2024" 
+            step="10" value="1980">
+        </p>
+        <!--optgroup Used  -->
+        <!-- <p>
+        <label for="juice">Favourite Juice</label>
+        <select name="juice" id="juice">
+        <optgroup label="Juices">
+        <option value="apple">Apple Juice</option>
+        <option value="orange">Orange Juice</option>
+        <option value="grapes">Grape Juice</option>
+        </optgroup>
+        <optgroup label="Special Juices">
+        <option value="abcjuice" selected>ABC Juice</option>
+        <option value="avacado">Avacado Juice</option>
+        <option value="dryfruit">Dryfruit Juice</option>
+        </optgroup>
+        </select>
+         </p> -->
+         <p>
+            <label for="juice">Favourite Juice:</label>
+            <input type="text" name="juice" id="juice" list="juice-list">
+            <datalist id="juice-list">
+            <option value="apple"></option>
+            <option value="orange"></option>
+            <option value="grapes"></option>
+            <option value="abcjuice"></option>
+            <option value="avacado"></option>
+            <option value="dryfruit"></option>
+            <option value="Mixedfruit Juice"></option>
+
+        </datalist>
+             </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Send me a Note</legend>
+                <label for="message">Your Message:</label>
+                <br>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </fieldset>
+           <br>
+           <button type="submit">Submit</button>
+           <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+           <button type="reset">Reset</button>
+           </form>
+    </article>
+    </main>
+    <footer>
+        <p>
+            <a href="#">Back to Top</a>
+             </p>
+        <hr>
+        <p>copyright &copy; The Sip and Simile Juice Shop</p>
+        </hr>
+    </footer>
+</body>
+</html>
